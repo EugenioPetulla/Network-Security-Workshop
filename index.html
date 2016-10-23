@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Network Security</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.min.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet"> 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/highlight/highlight.min.js"></script>
+</head>
+<body>
+	<div class="mozlogo"><img src="assets/mozlogo.png"></div>
+	<div class="reveal">
+        <div class="slides">
+            <section id="slide-1">
+                <img src="images/lifesaver.png" width="300" height="300">
+            	<h1>Network Security</h1>
+            	<h2>Un giorno in treno con internet</h2>
+            </section>
+            <section id="slide-me">
+                <img src="assets/eugenio.jpg" width="250" height="250">
+                <h1>Eugenio Petullà</h1>
+                    <p class="fragment grow">Full Stack Developer</p>
+                    <p class="fragment grow">Mozilla Tech Speaker</p>
+                    <p class="fragment grow">Open Source & Open Web Evengelist</p>
+            </section>
+            <section id="slide-2">
+                <img src="images/library.png" width="250" height="250">
+                <h2>Vi racconto una storia</h2>
+	            <p>Devi andare in un'altra città per un colloquio per il lavoro dei tuoi sogni.</br>
+                Prendi il tuo portatile, il tuo telefono,  il tuo curriculum e corri via!</p>
+            </section>
+            <section id="slide-3">
+                <img src="images/train.png" width="250" height="250">
+            	<h2>Arrivi in stazione tempo prima dell’arrivo del treno</h2>
+            	<p><em>Noti la connessione Wi-Fi libera e gratuita offerta in questa stazione e non cogli l'opportunità per essere produttivo durante l’attesa?</em></p>
+            </section>
+            <section id="slide-4">
+                <img src="images/wifi.png" width="250" height="250">
+            	<h2>Esegui la scansione delle reti Wi-Fi disponibili e ne trovi tre</h2>
+                <p><em>Scommetto che sceglierai quella denominata <strong>"Stazione_WiFi"</strong>, vero?</em></p>
+            </section>
+            <section id="slide-5">
+                <img src="images/honey.png" width="250" height="250">
+                <h2>La credibilità di una rete non è determinata dal nome</h2>
+                <p><em>Gli hacker possono costituire false reti aperte, chiamate in gergo <strong>«honeypots»</strong>.</em></p>
+            </section>
+            <section id="slide-6">
+                <img src="images/info.png" width="250" height="250">
+            	<h2>Bisogna sempre chiedere quale sia il nome reale di una connessione Wi-Fi alla struttura che la rende disponibile.</h2>
+            </section>
+            <section id="slide-7">
+            	<img src="images/info.png" width="250" height="250">
+                <h2>Per la stessa logica</h2>
+                <p><em>Pensa sempre se la tua rete domestica o il tuo smartphone, contengono il tuo nome, la posizione, o altri indizi che potrebbero identificare una rete come appartenente a te (ad esempio: iPhone di Daria).</em></p>
+            </section>
+            <section id="slide-8">
+                <img src="images/magic.png" width="250" height="250">
+                <h2>Ecco qualche trucco</h2>
+                <p><em>Mantieni il nome della rete vago o divertente, ma evita le descrizioni, le informazioni e il tuo nome (ad esempio: "I'm watching you" oppure "Nothing to see here").</em></p>
+            </section>
+            <section id="slide-9">
+                <img src="images/wifi.png" width="250" height="250">
+                <h2>Ricevuto il nome della rete ora siamo connessi</h2>
+                <p><em>Iniziamo a fare operazioni bancarie o acquisti online su una rete Wi-Fi aperta.</em></p>
+                <p class="fragments fade-in"><strong>SBAGLIATISSIMO!!</strong></p>
+            </section>
+            <section id="slide-10">
+                <img src="images/eye.png" width="250" height="250">
+                <h2>Sapevi che...</h2>
+                <p><em>Le reti aperte sono generalmente non criptate, e che il traffico è chiaramente visibile a tutti?<br>Chiunque, anche con competenze di base di hacking, può vedere le pagine web che stai visitando, quello che stai digitando in forma non criptata, e anche quali siti cifrati ti stai connettendo.</em></p>
+            </section>
+            <section id="slide-11">
+                <img src="images/open.png" width="250" height="250">
+                <h2>Permetti al tuo dispositivo di ricordare le reti aperte?</h2>
+                <p><em>Vuoi continuare a lavorare a bordo del treno e la scorsa settimana hai già usato la rete Wi-Fi.</em></p>
+            </section>
+            <section id="slide-12">
+                <img src="images/pineapple.png" width="250" height="250">
+                <h2>È troppo comodo, certo che si!</h2>
+                <p><em>Una <strong>“Wi-Fi Pineapple”</strong> è un dispositivo facile da usare che gli hacker utilizzano per cercare le richieste di connessione a reti conosciute.</em></p>
+            </section>
+            <section id="slide-13">
+                <img src="images/pineapple.png" width="250" height="250">
+                <ul>
+                    <p class="fragment grow"><strong>Il tuo device: </strong>Sei tu la mia rete?</p>
+                    <p class="fragment grow"><strong>Pineapple: </strong>Certo che sono io!</p>
+                    <p class="fragment grow"><strong>Il tuo device: </strong>Ok, ti credo. Mi ricordo di te!</p>
+                    <p class="fragment grow"><strong>Pineapple: </strong>È stato facile rubarti le informazioni!</p>
+                </ul>
+            </section>
+            <section id="slide-14">
+                <img src="images/keyhole.png" width="250" height="250">
+                <h2>Preferisco sempre connessioni criptate... o no?</h2>
+                <p><em>Visto che il tuo device non ricorda automaticamente le connessioni sei costretto a connetterti manualmente alla rete del treno. Controlli che siano connessioni criptate con WPA o WPA2?</em></p>
+            </section>
+            <section id="slide-15">
+                <img src="images/keyhole.png" width="250" height="250">
+                <h2>WPA e WPA2 servono per crittografare la connessione.</h2>
+                <p><em> Ciò significa che le altre persone che utilizzano la stessa rete non possono vedere cosa si sta facendo. Quando l'informazione è crittografata, è nascosta in un codice in modo che altri non possano ottenerla.</em></p>
+            </section>
+            <section id="slide-16">
+                <img src="images/battery.png" width="250" height="250">
+                <h2>Arrivi a destinazione ma hai il telefono scarico</h2>
+                <p><em>Ti dirigi verso una caffetteria nelle vicinanze per prepararti al colloquio. La caffetteria ha anche una stazione di ricarica USB e quindi non perdi tempo e colleghi il tuo dispositivo.</em></p>
+            </section>
+            <section id="slide-17">
+                <img src="images/squeezer.png" width="250" height="250">
+                <h2>Il "Juice Jacking"</h2>
+                <p><em>È il furto di dati da un dispositivo mobile attraverso stazioni di ricarica pubbliche. Gli hacker possono leggere e copiare i dati da un dispositivo, e caricare software dannoso.</em></p>
+            </section>
+            <section id="slide-18">
+                <img src="images/usb.png" width="250" height="250">
+                <h3>È buona pratica usare powerbank, cavi di alimentazione o condom USB.</h3>
+                <p><em>Spesso i telefoni sono configurati per entrare in modalità trasferimento dati se un cavo USB viene collegato.</em></p>
+            </section>
+            <section id="slide-19">
+                <img src="images/usb.png" width="250" height="250">
+                <h2>Un condom USB blocca i pin usati per trasferire informazioni e lascia attivi i pin per la carica</h2>
+            </section>
+            <section id="slide-20">
+                <img src="images/fireworks.png" width="250" height="250">
+                <h2>Complimenti, il colloquio è terminato e il lavoro è tuo</h2>
+                <p class="fragment fade-in"><em><strong>Ora ricordati di mandare una mail a tua madre per avvertirla e iniziare a preparare la festa!</strong></em></p>
+            </section>
+            <section id="slide-21">
+                <img src="images/questions.png" width="250" height="250">
+                <h2>Domande?</h2>
+                <p><em>Fatti coraggio, è il momento di chiarirti quasiasi dubbio!</em></p>
+            </section>
+            <section id="slide-22">
+                <section>
+                    <img src="images/post-it.png" width="150" height="150">
+                    <h2>Risorse utili</h2>
+                    <p class="fragment fade-in"><strong><a href="https://eugeniopetulla.github.io/Network-Security-Workshop">eugeniopetulla.github.io/Network-Security-Workshop</a></strong></p>
+                    <p class="fragment fade-in"><strong><a href="https://support.mozilla.org/it/kb/navigazione-web-sicura">support.mozilla.org/it/kb/navigazione-web-sicura</a></strong></p>
+                    <p class="fragment fade-in"><strong><a href="https://www.mozilla.org/it/teach/smarton/security/">www.mozilla.org/it/teach/smarton/security/</a></strong></p>
+                </section>
+                <section>
+                    <img src="images/resource.png">
+                </section>
+            </section>
+        </div>
+    </div>
+	<script>
+        Reveal.initialize();
+    </script>
+</body>
+</html>
