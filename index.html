@@ -3,11 +3,10 @@
 <head>
 	<title>Network Security</title>
     <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.min.css">
-	<link rel="stylesheet" type="text/css" href="css/default.css">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet"> 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/highlight/highlight.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reveal.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/darcula.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<div class="mozlogo"><img src="assets/mozlogo.png"></div>
@@ -143,8 +142,23 @@
             </section>
         </div>
     </div>
-	<script>
-        Reveal.initialize();
+	<script type="text/javascript" src="js/reveal.js"></script>
+    <script type="text/javascript" src="js/head.min.js"></script>
+    <script>
+        Reveal.initialize({
+                history: true,
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    //{ src: 'plugin/markdown/marked.js' },
+                    //{ src: 'plugin/markdown/markdown.js' },
+                    //{ src: 'plugin/notes/notes.js', async: true },
+                    {src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                    return !!document.querySelector('pre code');
+                  }, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                  }}
+                ]
+            });
     </script>
 </body>
 </html>
